@@ -1,0 +1,51 @@
+@url_base=http://127.0.0.1:5000/students
+
+GET {{url_base}}/ HTTP/1.1
+content-type: application/json
+###
+
+GET {{url_base}}/2/ HTTP/1.1
+content-type: application/json
+###
+
+POST {{url_base}}/ HTTP/1.1
+content-type: application/json
+
+{
+    "cpf": "01834522757",
+    "email": "sssss@gmail.com",
+    "name": "Sérgio Wellington",
+    "cell_phone": "21964049400",
+    "cell_phone2": null,
+    "situation": 1
+}
+###
+
+PUT {{url_base}}/5/  HTTP/1.1
+content-type: application/json
+
+{
+    "cpf": "01834522750",
+    "email": "xxxx@gmail.com",
+    "name": "Sérgio Wellington",
+    "cell_phone": "21964049400",
+    "cell_phone2": null,
+    "situation": 1
+}
+###
+
+
+POST http://127.0.0.1:5000/funcionarios  HTTP/1.1
+content-type: application/json
+
+{
+    "phone": "xxxxxxxxxxx",
+    "email": "xx",
+    "nome": "Guilherme"
+}
+###
+
+delete http://127.0.0.1:5000/funcionarios/2  HTTP/1.1
+content-type: application/json
+
+###

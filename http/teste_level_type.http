@@ -1,0 +1,9 @@
+@url_base=http://127.0.0.1:5000/level_types
+
+GET {{url_base}}/ HTTP/1.1
+content-type: application/json
+###
+
+GET {{url_base}}/14/ HTTP/1.1
+content-type: application/json
+###

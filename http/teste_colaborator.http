@@ -1,0 +1,36 @@
+@url_base=http://127.0.0.1:5000/colaborators
+
+GET {{url_base}}/ HTTP/1.1
+content-type: application/json
+###
+
+GET {{url_base}}/2/ HTTP/1.1
+content-type: application/json
+###
+
+POST {{url_base}}/ HTTP/1.1
+content-type: application/json
+
+{
+    "cpf": "01834522756",
+    "email": "pedro2@gmail.com",
+    "name": "Pedro Americano 2",
+    "cell_phone": "21964049402",
+    "cell_phone2": null,
+    "colaborator_type_id": 3
+}
+###
+
+PUT {{url_base}}/2/ HTTP/1.1
+content-type: application/json
+
+{
+    "email": "pedro@gmail.com",
+    "name": "Pedro Americano",
+    "cell_phone": "21989593059",
+    "cell_phone2": null 
+}
+###
+
+DELETE {{url_base}}/2/ HTTP/1.1
+content-type: application/json
