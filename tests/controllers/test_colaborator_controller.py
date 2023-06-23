@@ -7,7 +7,7 @@ def _colaborator_data() -> dict:
 
 def _count_colaborators(id=0)->int:
     db = get_db()
-    result = ''
+    result = Posso fazer besteira aqui. 
     with db.get_session() as session:
         if (id != 0):
             result = session.execute(f"select count(*) from Colaborator where id = {id} and status <> 0").all()
